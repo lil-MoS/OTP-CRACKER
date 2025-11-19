@@ -1,77 +1,35 @@
-OTP-CRACKER
-کرکر خودکار کد تأیید ۶ رقمی (OTP) با سرعت بالا – مخصوص سایت‌ها و اپلیکیشن‌های ایرانی
-lil-mos/OTP-CRACKER
-ابزار سبک و فوق‌سریع برای تست تمام ۱٬۰۰۰٬۰۰۰ کد ممکن ۶ رقمی در کمتر از ۵–۷ دقیقه
-OTP CRACKER Banner
-چرا این ابزار؟
-بیشتر سایت‌های ایرانی هنوز از ۶ کادر جداگانه برای وارد کردن کد پیامکی استفاده می‌کنن.
-این یعنی می‌شه با یک اسکریپت ساده و بدون نیاز به Selenium یا مرورگر، تمام ترکیب‌های ممکن رو با سرعت خیلی بالا تست کرد.
-ویژگی‌ها
+# OTP-CRACKER  
+**کرکر خودکار کد تأیید ۶ رقمی ایرانی (OTP Brute-Force)**
 
-سرعت ۳ تا ۴ کد در ثانیه (بسته به تأخیر سایت)
-ادامه خودکار از آخرین کد تست‌شده (حتی بعد از ری‌استارت)
-شروع و توقف فوری با کلید میانبر
-پاک‌سازی کامل فیلدها بعد از هر تلاش
-بدون نیاز به مرورگر، کاملاً با PyAutoGUI کار می‌کنه → بسیار سبک
-کد تمیز و کاملاً قابل فهم
+[![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?style=flat&logo=python&logoColor=white)](https://python.org)
+[![PyAutoGUI](https://img.shields.io/badge/PyAutoGUI-Latest-blue)](https://pyautogui.readthedocs.io)
+[![Keyboard](https://img.shields.io/badge/Keyboard-Hotkeys-green)](https://github.com/boppreh/keyboard)
+[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-ff69b4?style=flat)](http://www.wtfpl.net)
+[![Stars](https://img.shields.io/github/stars/lil-mos/OTP-CRACKER?style=social)](https://github.com/lil-mos/OTP-CRACKER)
 
-میانبرهای کیبورد
+> تست تمام ۱٬۰۰۰٬۰۰۰ کد ۶ رقمی ممکن در کمتر از **۵ تا ۷ دقیقه**  
+> مخصوص سایت‌ها و اپلیکیشن‌های ایرانی با ۶ کادر جداگانه ورودی
 
+<img src="https://raw.githubusercontent.com/lil-mos/OTP-CRACKER/main/assets/banner.png" alt="OTP CRACKER - Fast 6-digit Iranian OTP Bruter">
 
+## ویژگی‌های کلیدی
+- سرعت بالا: **۳–۴ کد در ثانیه**
+- ادامه از آخرین کد (حتی بعد از قطع شدن)
+- شروع/توقف فوری با کلید میانبر
+- پاک‌سازی خودکار فیلدها بعد از هر تلاش
+- بدون سلنیوم، بدون مرورگر → فوق‌العاده سبک
+- کاملاً آفلاین و بدون نیاز به اینترنت
 
+## کلیدهای میانبر
+| عمل            | کلید میانبر       |
+|----------------|-------------------|
+| شروع کرک       | `Shift + T`       |
+| توقف فوری      | `Shift + Y`       |
+| خروج کامل      | `Ctrl + C` یا بستن ترمینال |
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-عملکلید میانبرشروع کرکShift + Tتوقف فوریShift + Yخروج کاملبستن ترمینال یا Ctrl+C
-نصب و راه‌اندازی
-Bashgit clone https://github.com/lil-mos/OTP-CRACKER.git
+## نصب سریع
+```bash
+git clone https://github.com/lil-mos/OTP-CRACKER.git
 cd OTP-CRACKER
 pip install pyautogui keyboard
 python code_cracker.py
-نحوه استفاده قدم به قدم
-
-وارد صفحه ورود با کد پیامکی بشید (همون ۶ تا کادر جداگانه)
-با ماوس دقیقاً روی اولین کادر کلیک کنید (مهم!)
-اسکریپت رو اجرا کنید
-کلیدهای Shift + T رو فشار بدید
-صبر کنید تا کد درست پیدا بشه یا هر وقت خواستید با Shift + Y متوقفش کنید
-
-تموم! اسکریپت خودش تایپ می‌کنه، اینتر می‌زنه، پاک می‌کنه و ادامه می‌ده.
-تنظیم سرعت (در صورت نیاز)
-اگر سایت کند بود یا خطا می‌داد، این خط رو تو فایل code_cracker.py پیدا کنید و عددش رو بیشتر کنید:
-Pythontime.sleep(0.3)  # ← مثلاً بکنید 0.5 یا 0.8
-فایل‌های پروژه
-
-code_cracker.py → اسکریپت اصلی
-README.md → همین فایل
-/assets/banner.png → عکس بنر (اختیاری)
-
-هشدار قانونی بسیار مهم
-این ابزار فقط برای اهداف زیر مجاز است:
-
-آموزش و تست امنیت سیستم خودتان
-بازیابی حساب شخصی خودتان (در صورتی که پیامک نیومده)
-تست نفوذ قانونی با مجوز کتبی صاحب سیستم
-
-هرگونه استفاده برای دسترسی غیرمجاز به حساب دیگران جرم سایبری محسوب می‌شه و پیگرد قانونی داره.
-من (lil-mos) و گیت‌هاب هیچ‌گونه مسئولیتی در قبال سوءاستفاده قبول نمی‌کنیم.
-لایسنس
-WTFPL – Do What The Fuck You Want To Public License
-یعنی هر کاری دلت خواست بکن، فقط خودت مسئول عواقبشی.
-Coded with energy drink and zero patience by lil-mos
-اگر خوشت اومد ستاره فراموش نشه ☆
