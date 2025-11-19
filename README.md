@@ -1,88 +1,112 @@
-اینجا دقیقاً همون README کاملاً آماده کپی کردنه — فارسی و انگلیسی کاملاً جدا، با تگ FA و EN در بالای هر بخش. فقط کپی کن و تو README.md بریز:
-Markdown# OTP-CRACKER  
-**کرکر فوق‌سریع کد تأیید ۶ رقمی ایرانی | 6-Digit Iranian OTP Brute-Force Tool**
+OTP Code Cracker - کرکر کد یکبار مصرف
+English Version
+🔥 OTP Code Cracker
+A powerful Python automation tool for testing all possible 6-digit OTP (One-Time Password) combinations with intelligent speed optimization.
 
-[![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?style=flat&logo=python&logoColor=white)](https://python.org)
-[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-ff69b4?style=flat)](http://www.wtfpl.net)
-[![Stars](https://img.shields.io/github/stars/lil-mos/OTP-CRACKER?style=social)](https://github.com/lil-mos/OTP-CRACKER)
+🚀 Features
+Brute-force Automation: Tests all 6-digit combinations (000000-999999)
 
----
+Smart Speed Control: Optimized timing for maximum efficiency
 
-### FA فارسی
+Hotkey Controls: Start/Stop with simple keyboard shortcuts
 
-#### نصب و اجرا
-```bash
-git clone https://github.com/lil-mos/OTP-CRACKER.git
-cd OTP-CRACKER
+Resume Capability: Continues from last tested code if interrupted
+
+Real-time Progress: Live display of current code being tested
+
+🛠️ Installation & Setup
+Prerequisites:
+
 pip install pyautogui keyboard
-python code_cracker.py
-کلیدهای میانبر
+Usage:
 
-شروع کرک: Shift + T
-توقف فوری: Shift + Y
-خروج کامل: Ctrl + C یا بستن پنجره
+Run the script: python code_cracker.py
 
-نحوه استفاده
+Click on the first input field of the 6-digit OTP form
 
-برو تو صفحه ورود با کد پیامکی (۶ تا کادر جداگانه)
-با ماوس روی اولین کادر کلیک کن
-برنامه رو اجرا کن
-Shift + T بزن → کرک شروع می‌شه
-هر وقت خواستی Shift + Y بزن → متوقف می‌شه
+Press Shift + T to start cracking
 
-تنظیم سرعت (اگه سایت کند بود)
-تو فایل code_cracker.py این خط رو پیدا کن و عددش رو بیشتر کن:
-Pythontime.sleep(0.3)  # → مثلاً 0.5 یا 0.8
-ویژگی‌ها
+Press Shift + Y to stop at any time
 
-سرعت ۳–۴ کد در ثانیه
-ادامه از آخرین کد تست‌شده
-بدون سلنیوم و مرورگر
-پاک‌سازی خودکار فیلدها
-فوق‌العاده سبک و سریع
+⚡ Technical Details
+Input Method: High-speed typing with 0.02s interval
 
-هشدار قانونی
-فقط برای آموزش، تست قانونی و بازیابی حساب شخصی خودتان مجاز است.
-استفاده برای دسترسی غیرمجاز به حساب دیگران جرم سایبری و پیگرد قانونی دارد.
-لایسنس
-WTFPL – هر کاری دلت خواست بکن، فقط خودت مسئولی
+Processing Delay: 0.3s between attempts (adjustable)
 
-EN English
-Installation & Run
-Bashgit clone https://github.com/lil-mos/OTP-CRACKER.git
-cd OTP-CRACKER
+Auto-clear: Automatic field clearing between attempts
+
+Progress Tracking: Saves last tested code
+
+⚠️ Important Notes
+Use only on systems you own or have explicit permission to test
+
+Intended for educational and authorized security testing
+
+Adjust sleep timings based on target system response
+
+نسخه فارسی - کرکر کد یکبار مصرف
+🚀 کرکر کد یکبار مصرف
+یک ابزار اتوماسیون پایتون قدرتمند برای تست تمام ترکیبات ممکن کدهای شش رقمی یکبار مصرف با بهینه‌سازی هوشمند سرعت
+
+✨ ویژگی‌ها
+اتوماسیون کامل: تست تمام ترکیبات شش رقمی (000000-999999)
+
+کنترل سرعت هوشمند: زمان‌بندی بهینه برای حداکثر کارایی
+
+کنترل با کلیدهای میانبر: شروع و توقف با کلیدهای ساده
+
+قابلیت ادامه: از آخرین کد تست شده ادامه می‌دهد
+
+نمایش پیشرفت زنده: نمایش لحظه‌ای کد در حال تست
+
+🛠️ نصب و راه‌اندازی
+پیش‌نیازها:
+
+
 pip install pyautogui keyboard
+طریقه استفاده:
+
+اجرای اسکریپت: python code_cracker.py
+
+کلیک روی اولین فیلد ورودی از فرم کد شش رقمی
+
+فشردن Shift + T برای شروع عملیات
+
+فشردن Shift + Y برای توقف در هر زمان
+
+⚡ جزئیات فنی
+روش ورود: تایپ پرسرعت با فاصله 0.02 ثانیه
+
+تأخیر پردازش: 0.3 ثانیه بین هر تلاش (قابل تنظیم)
+
+پاک‌سازی خودکار: پاک کردن فیلدها بین هر تلاش
+
+ردیابی پیشرفت: ذخیره آخرین کد تست شده
+
+⚠️ نکات مهم
+فقط روی سیستم‌هایی استفاده شود که مالک آن هستید یا مجوز تست دارید
+
+برای تست امنیت و اهداف آموزشی طراحی شده
+
+زمان‌های تأخیر را بر اساس پاسخ سیستم هدف تنظیم کنید
+
+📁 File Structure
+
+OTP-CRACKER/
+│
+├── code_cracker.py      # Main script
+├── README.md           # This file
+└── requirements.txt    # Dependencies
+🎯 Quick Start
+
+# Run and follow instructions
 python code_cracker.py
-Hotkeys
+🔧 Customization
+Adjust these values in the code for different speeds:
 
-Start cracking: Shift + T
-Stop immediately: Shift + Y
-Exit completely: Ctrl + C or close window
 
-How to Use
+pyautogui.write(code, interval=0.02)  # Typing speed
+time.sleep(0.3)                       # Processing delay
+pyautogui.press('backspace', presses=6, interval=0.01)  # Clear speed
+⚠️ مسئولیت استفاده بر عهده کاربر است. تنها برای اهداف آموزشی و تست امنیتی مجاز استفاده شود.
 
-Go to the 6-digit OTP login page (6 separate boxes)
-Click exactly on the first input box with mouse
-Run the script
-Press Shift + T → cracking starts
-Press Shift + Y anytime to stop
-
-Speed Adjustment (if website is slow)
-Edit this line in code_cracker.py:
-Pythontime.sleep(0.3)  # → increase to 0.5 or 0.8
-Features
-
-3–4 codes per second
-Resume from last tested code
-No Selenium, no browser needed
-Auto-clear inputs after each attempt
-Extremely lightweight & fast
-
-Legal Warning
-For educational purposes, legal security testing, and personal account recovery only.
-Unauthorized use against others is a cybercrime and will be prosecuted.
-License
-WTFPL – Do What The Fuck You Want To Public License
-
-Coded with energy drink and zero patience by lil-mos
-اگه خوشت اومد یه ستاره بزن که حال کنیم ☆
