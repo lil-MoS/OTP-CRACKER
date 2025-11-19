@@ -1,112 +1,167 @@
-OTP Code Cracker - کرکر کد یکبار مصرف
-English Version
-🔥 OTP Code Cracker
-A powerful Python automation tool for testing all possible 6-digit OTP (One-Time Password) combinations with intelligent speed optimization.
+# OTP CRACKER - 6 Digit Code Brute Forcer ⚡
 
-🚀 Features
-Brute-force Automation: Tests all 6-digit combinations (000000-999999)
+![Python](https://img.shields.io/badge/python-3.8%2B-blue)
+![PyAutoGUI](https://img.shields.io/badge/PyAutoGUI-automate-green)
+![Status](https://img.shields.io/badge/status-active-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-yellow)
 
-Smart Speed Control: Optimized timing for maximum efficiency
+A fast and efficient **6-digit OTP brute force tool** using keyboard & mouse automation.  
+Perfect for testing websites or apps that use 6 separate input boxes for one-time passwords (common in Iranian banks, 2FA pages, etc.).
 
-Hotkey Controls: Start/Stop with simple keyboard shortcuts
+**Warning**: Use only on systems or websites you own or have explicit permission to test. Unauthorized brute-force attacks are illegal.
 
-Resume Capability: Continues from last tested code if interrupted
+---
 
-Real-time Progress: Live display of current code being tested
+### Features
+- Super fast code testing (~3 codes per second)
+- Resume from last tested code
+- Start/Stop with hotkeys (`Shift+T` / `Shift+Y`)
+- Auto-clear fields using Backspace
+- Live counter in console
+- Simple & lightweight (only 2 dependencies)
 
-🛠️ Installation & Setup
-Prerequisites:
+---
 
+### Requirements
+```bash
 pip install pyautogui keyboard
-Usage:
 
-Run the script: python code_cracker.py
+How to Use
 
-Click on the first input field of the 6-digit OTP form
-
+Open the target website/app with 6 separate digit input boxes
+Run the script
+Click on the first input box with your mouse
 Press Shift + T to start cracking
+Press Shift + Y to stop anytime
 
-Press Shift + Y to stop at any time
+The script will automatically:
 
-⚡ Technical Details
-Input Method: High-speed typing with 0.02s interval
+Type the 6-digit code
+Press Enter
+Wait a moment
+Clear all 6 fields with Backspace
+Continue with next code...
 
-Processing Delay: 0.3s between attempts (adjustable)
+From 000000 → 999999
 
-Auto-clear: Automatic field clearing between attempts
+Hotkeys
 
-Progress Tracking: Saves last tested code
+time.sleep(0.3)  # ← change this value (0.5, 1.0, etc.)
+If there is no requirements.txt, add only the libraries you need for simulation.
 
-⚠️ Important Notes
-Use only on systems you own or have explicit permission to test
+Responsible Disclosure & Ethics
 
-Intended for educational and authorized security testing
+Do not use this code to access accounts or systems you don't own or don't have permission to test.
 
-Adjust sleep timings based on target system response
+If you discover a real vulnerability, follow an established responsible disclosure process for the affected vendor or service.
 
-نسخه فارسی - کرکر کد یکبار مصرف
-🚀 کرکر کد یکبار مصرف
-یک ابزار اتوماسیون پایتون قدرتمند برای تست تمام ترکیبات ممکن کدهای شش رقمی یکبار مصرف با بهینه‌سازی هوشمند سرعت
+Keep logs and evidence of authorization for any security testing.
 
-✨ ویژگی‌ها
-اتوماسیون کامل: تست تمام ترکیبات شش رقمی (000000-999999)
+Contributing (ethical contributions only)
 
-کنترل سرعت هوشمند: زمان‌بندی بهینه برای حداکثر کارایی
+Contributions are welcome only if they promote defensive research, education, or otherwise improve security posture. Suggested contributions:
 
-کنترل با کلیدهای میانبر: شروع و توقف با کلیدهای ساده
+Example safe lab (HTML + server) that demonstrates concepts without threatening real services.
 
-قابلیت ادامه: از آخرین کد تست شده ادامه می‌دهد
+Documentation on mitigation strategies (rate-limiting, MFA best-practices).
 
-نمایش پیشرفت زنده: نمایش لحظه‌ای کد در حال تست
+Unit tests and example simulation scripts.
 
-🛠️ نصب و راه‌اندازی
-پیش‌نیازها:
+License
 
+This repository is distributed under the MIT license. See LICENSE for details.
 
-pip install pyautogui keyboard
-طریقه استفاده:
+Contact / Questions
 
-اجرای اسکریپت: python code_cracker.py
-
-کلیک روی اولین فیلد ورودی از فرم کد شش رقمی
-
-فشردن Shift + T برای شروع عملیات
-
-فشردن Shift + Y برای توقف در هر زمان
-
-⚡ جزئیات فنی
-روش ورود: تایپ پرسرعت با فاصله 0.02 ثانیه
-
-تأخیر پردازش: 0.3 ثانیه بین هر تلاش (قابل تنظیم)
-
-پاک‌سازی خودکار: پاک کردن فیلدها بین هر تلاش
-
-ردیابی پیشرفت: ذخیره آخرین کد تست شده
-
-⚠️ نکات مهم
-فقط روی سیستم‌هایی استفاده شود که مالک آن هستید یا مجوز تست دارید
-
-برای تست امنیت و اهداف آموزشی طراحی شده
-
-زمان‌های تأخیر را بر اساس پاسخ سیستم هدف تنظیم کنید
-
-📁 File Structure
-
-OTP-CRACKER/
-│
-├── code_cracker.py      # Main script
-├── README.md           # This file
-└── requirements.txt    # Dependencies
-🎯 Quick Start
-
-# Run and follow instructions
-python code_cracker.py
-🔧 Customization
-Adjust these values in the code for different speeds:
+If you are a legitimate security researcher and want to collaborate on defensive research or an authorized test, open an issue or contact the repository owner with written authorization details.
 
 
-pyautogui.write(code, interval=0.02)  # Typing speed
-time.sleep(0.3)                       # Processing delay
-pyautogui.press('backspace', presses=6, interval=0.01)  # Clear speed
-⚠️ مسئولیت استفاده بر عهده کاربر است. تنها برای اهداف آموزشی و تست امنیتی مجاز استفاده شود.
+
+██████╗ ████████╗██████╗      ██████╗██████╗  █████╗  ██████╗██╗  ██╗███████╗██████╗ 
+██╔═══██╗╚══██╔══╝██╔══██╗    ██╔════╝██╔══██╗██╔══██╗██╔════╝██║ ██╔╝██╔════╝██╔══██╗
+██║   ██║   ██║   ██████╔╝    ██║     ██████╔╝███████║██║     █████╔╝ █████╗  ██████╔╝
+██║   ██║   ██║   ██╔═══╝     ██║     ██╔══██╗██╔══██║██║     ██╔═██╗ ██╔══╝  ██╔══██╗
+╚██████╔╝   ██║   ██║         ╚██████╗██║  ██║██║  ██║╚██████╗██║  ██╗███████╗██║  ██║
+ ╚═════╝    ╚═╝   ╚═╝          ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
+ابزار حرفه‌ای و فوق سریع برای تست خودکار کدهای ۶ رقمی (مثل رمز دوم پویا بانک‌ها، سامانه‌های ثنا، صیاد و...)
+ویژگی‌های خفن 🔥
+
+سرعت بالا (حدود ۳ کد در ثانیه)
+ادامه از آخرین کد تست‌شده
+شروع و توقف با کلید میانبر
+پاک‌سازی خودکار فیلدها
+نمایش زنده کد فعلی
+فقط ۲ تا کتابخونه نیاز داره!
+
+
+نصب پیش‌نیازها
+
+<code>pip install pyautogui keyboard<code/>
+
+نحوه استفاده 📝
+
+سایت یا برنامه‌ای که ۶ تا کادر جدا داره رو باز کن
+اسکریپت رو اجرا کن
+با موس روی اولین کادر کلیک کن
+کلیدهای Shift + T رو بزن → شروع میشه!
+هر وقت خواستی Shift + Y بزن → می‌ایسته
+
+همه‌چیز خودکار انجام میشه:
+
+تایپ کد → اینتر → صبر کوتاه → پاک کردن ۶ تا فیلد → کد بعدی...
+
+از 000000 تا 999999
+کلیدهای میانبر 🎮
+
+هشدار مهم ⚠️
+این ابزار فقط برای تست قانونی و مجاز (مثل تست سیستم خودتون) ساخته شده.
+استفاده غیرمجاز = غیرقانونی و پیگرد قانونی داره.
+توسعه‌دهنده هیچ مسئولیتی در قبال سوءاستفاده نداره.
+
+ساخته شده با ❤️ توسط lil-MoS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+کلیدکارShift + Tشروع کرکShift + Yتوقف کرکCtrl + Cخروج کامل از برنامه
+تنظیم سرعت ⏱️
+اگه سایت کند بود یا بلاکت کرد، این خط رو تغییر بده:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+HotkeyActionShift + TStart crackingShift + YStop crackingCtrl + CExit program
+
+Speed Adjustment
+If the website is slow or blocks you, increase the delay here:
 
