@@ -10,7 +10,7 @@
 > تست تمام ۱٬۰۰۰٬۰۰۰ کد ۶ رقمی ممکن در کمتر از **۵ تا ۷ دقیقه**  
 > مخصوص سایت‌ها و اپلیکیشن‌های ایرانی با ۶ کادر جداگانه ورودی
 
-<img src="https://raw.githubusercontent.com/lil-mos/OTP-CRACKER/main/assets/banner.png" alt="OTP CRACKER - Fast 6-digit Iranian OTP Bruter">
+
 
 ## ویژگی‌های کلیدی
 - سرعت بالا: **۳–۴ کد در ثانیه**
@@ -33,3 +33,8 @@ git clone https://github.com/lil-mos/OTP-CRACKER.git
 cd OTP-CRACKER
 pip install pyautogui keyboard
 python code_cracker.py
+
+
+```
+
+مسئولیت استفاده به پای خودتون هست روی سایت ها و نرافزار هایی که مجوز تست دارید استفاده کنید 
